@@ -1,0 +1,99 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Georgia, serif;
+}
+
+body{
+  height:100vh;
+  overflow:hidden;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
+
+/* SPACE */
+.space{
+  position:fixed;
+  inset:0;
+  background:radial-gradient(circle at bottom,#1b2735 0%,#090a0f 100%);
+  z-index:-2;
+}
+
+/* STARS */
+.stars{
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(1px 1px at 20px 30px, white, transparent),
+    radial-gradient(1px 1px at 100px 80px, white, transparent),
+    radial-gradient(1px 1px at 200px 150px, white, transparent);
+  background-size:300px 300px;
+  animation:moveStars 40s linear infinite;
+  z-index:-1;
+}
+
+@keyframes moveStars{
+  from{background-position:0 0;}
+  to{background-position:0 1000px;}
+}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.1);
+  padding:40px;
+  border-radius:24px;
+  text-align:center;
+}
+
+.card h1{
+  color:#ffb6c1;
+  margin-bottom:10px;
+}
+
+.card p{
+  margin-bottom:25px;
+}
+
+button{
+  padding:12px 28px;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+  font-size:1rem;
+}
+
+#yesBtn{
+  background:#ff4d88;
+  color:white;
+}
+
+#noBtn{
+  background:#eee;
+  color:#333;
+  position:absolute;
+}
+
+.final{
+  position:absolute;
+  text-align:center;
+  opacity:0;
+  animation:fadeIn 1.5s forwards;
+}
+
+.final img{
+  width:260px;
+  border-radius:18px;
+  margin-bottom:20px;
+}
+
+.hidden{
+  display:none;
+}
+
+@keyframes fadeIn{
+  to{opacity:1;}
+}
