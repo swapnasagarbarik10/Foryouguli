@@ -6,11 +6,11 @@ const mainCard = document.getElementById("mainCard");
 const finalCard = document.getElementById("finalCard");
 
 const noTexts = [
-  "Na maanbo na",
-  "Really?",
-  "Nice try 😏",
-  "You sure?",
-  "No escape!",
+  "Na mane ki?",
+  "Areee Abar?",
+  "Na bola jabe na 😏",
+  "akhono na?",
+  "Kamre Debo!",
   "Ab toh ha bolna hi parega"
 ];
 
